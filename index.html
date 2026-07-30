@@ -9,27 +9,64 @@
 </head>
 
 <body>
-  <script type="module" src="/src/main.ts"></script>
-  <div id="canvas-container">
-    <canvas id="canvas" width="800" height="600"></canvas>
-    <div id="index">
-      <span>
-        <i class="swatch start"></i>
-        <p>Start Room</p>
-      </span>
-      <span>
-        <i class="swatch normal"></i>
-        <p>Normal Room</p>
-      </span>
-      <span>
-        <i class="swatch treasure"></i>
-        <p>Treasure Room</p>
-      </span>
-      <span>
-        <i class="swatch boss"></i>
-        <p>Boss Room</p>
-      </span>
+  <div id="toolbar">
+    <button id="regenerate-btn">New Dungeon</button>
+    <button id="toggle-graph-btn">Toggle 3D View</button>
+  </div>
+
+  <div id="panels">
+    <div id="panel-2d" class="panel">
+      <canvas id="canvas" width="800" height="600"></canvas>
+
+      <div id="index">
+        <span>
+          <i class="swatch start"></i>
+          <p>Start Room</p>
+        </span>
+        <span>
+          <i class="swatch normal"></i>
+          <p>Normal Room</p>
+        </span>
+        <span>
+          <i class="swatch treasure"></i>
+          <p>Treasure Room</p>
+        </span>
+        <span>
+          <i class="swatch boss"></i>
+          <p>Boss Room</p>
+        </span>
+      </div>
     </div>
+
+    <div id="panel-3d" class="panel">
+  <div id="viewport-3d"></div>
+
+  <div id="index-3d">
+    <span>
+      <i class="swatch-3d start"></i>
+      <p>Start Room</p>
+    </span>
+    <span>
+      <i class="swatch-3d boss"></i>
+      <p>Boss Room</p>
+    </span>
+    <span>
+      <i class="swatch-3d treasure"></i>
+      <p>Treasure Room</p>
+    </span>
+    <span>
+      <i class="swatch-3d room-floor"></i>
+      <p>Room Floor</p>
+    </span>
+    <span>
+      <i class="swatch-3d corridor-floor"></i>
+      <p>Corridor Floor</p>
+    </span>
+  </div>
+</div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>
