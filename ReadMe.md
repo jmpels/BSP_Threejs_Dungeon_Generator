@@ -7,6 +7,8 @@ rooms (start / boss / treasure) using **BFS** over that graph, and renders
 the result two ways side by side: a 2D top-down canvas view, and a live
 **Three.js** 3D scene built from the same data.
 
+![2D and 3D dungeon views side by side](./docs/screenshot.png)
+
 ## How it works
 
 1. **BSP partitioning** — the map rectangle is recursively split (alternating
@@ -68,8 +70,10 @@ index.html
 - **Toggle 3D View** — shows/hides the 3D panel without shifting the 2D
   panel's position (uses `visibility`, not `display`, so layout space stays
   reserved).
-- **Legend** (top-right of the 2D panel) — color key for start / normal /
-  treasure / boss rooms, shared between both views.
+- **Legend** (top-right of each panel) — color key for start / normal /
+  treasure / boss rooms, plus room-floor vs corridor-floor in the 3D panel.
+  Each panel has its own legend since the 2D and 3D views use different
+  color palettes.
 
 ## Run locally
 
