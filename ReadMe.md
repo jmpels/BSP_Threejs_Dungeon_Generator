@@ -1,7 +1,7 @@
 # BSP Dungeon Generator (2D + Three.js)
 
 
-VERCEL HOSTING : https://bsp-threejs-dungeon-generator-5was.vercel.app/ ;
+VERCEL HOSTING : [bsp-threejs-dungeon-generator-5was.vercel.app](https://bsp-threejs-dungeon-generator-5was.vercel.app/) ;
 
 Procedural dungeon generator built from scratch in TypeScript. Uses **Binary
 Space Partitioning (BSP)** to lay out the map, builds a **room graph** on top
