@@ -1,5 +1,5 @@
 import "./style.css";
-import { BSP_Node, Corridor, Room } from "../../vite-project/generator/bsp"; // adjust path if your project structure differs
+import { BSP_Node, Corridor, Room } from "../generator/bsp"; // adjust path if your project structure differs
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import * as THREE from "three";
 
